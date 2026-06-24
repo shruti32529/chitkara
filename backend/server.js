@@ -8,6 +8,10 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+app.get("/", (req, res) => {
+    res.send("Backend is live");
+});
+
 app.use("/bfhl", bfhlRoutes);
 
 app.listen(5000, () => {
