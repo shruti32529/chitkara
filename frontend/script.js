@@ -2,7 +2,7 @@ async function submitData() {
     const input = document.getElementById("nodes").value;
     const data = input.split(",");
 
-    const response = await fetch("http://localhost:5000/bfhl", {
+    const response = await fetch("https://your-backend-url.onrender.com/bfhl", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
