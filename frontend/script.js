@@ -2,7 +2,7 @@ async function submitData() {
     const input = document.getElementById("nodes").value;
     const data = input.split(",");
 
-    const response = await fetch("https://your-backend-url.onrender.com/bfhl", {
+    const response = await fetch("https://chitkara-backend-mj0o.onrender.com", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
